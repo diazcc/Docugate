@@ -1,0 +1,23 @@
+.input-files {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    &__text{
+    }
+    &__counter {
+        color: white;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #006cd8;
+    }
+}

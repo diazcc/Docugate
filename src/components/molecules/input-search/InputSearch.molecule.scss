@@ -1,0 +1,16 @@
+.input-search{
+    display: flex;
+    flex-direction: row;
+    background-color: #F0F0F0;
+    padding: 0.3rem;
+    width: 100%;
+    max-width: 30rem;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+    input{
+        width: 100%;
+        border: none;
+        background-color: #F0F0F0;
+    }
+}

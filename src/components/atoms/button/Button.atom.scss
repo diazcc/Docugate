@@ -1,0 +1,46 @@
+.button {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    transition: all ease-out 0.1s;
+    &:hover {
+        background-color: rgb(216, 216, 216);
+    }
+    &:active {
+        background-color: rgb(190, 190, 190);
+    }
+
+    &--green {
+        color: white;
+        background-color: green;
+    }
+    &--blue {
+        background-color: #006cd8;
+        color: white;
+        &:hover {
+            background-color: #0065ca;
+        }
+        &:active {
+            background-color: #005bb5;
+        }
+    }
+    &--gray-blue {
+        background-color: rgb(238, 238, 238);
+
+        color: black;
+        &:hover {
+            background-color: #006cd8;
+            color: white;
+        }
+        &:active {
+            background-color: #005bb5;
+            color: white;
+        }
+    }
+    &--red {
+        &:hover {
+            background-color: rgb(255, 0, 0);
+            color: white;
+        }
+    }
+    
+}

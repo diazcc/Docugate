@@ -1,0 +1,23 @@
+.calendar {
+    height: 99%;
+    max-height: 100%;
+    text-align: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, minmax(10%, auto));
+    background-color: rgba(14, 14, 225, 0) !important;
+
+    &__title {
+        font-weight: lighter;
+    }
+
+    &__content {
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        padding: 0
+    }
+
+}

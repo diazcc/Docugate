@@ -1,0 +1,119 @@
+
+*{
+}
+.filing-public-login__wrapper {
+    display: flex;
+    min-height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-height: 3rem;
+        &__img {
+            object-fit: contain;
+            width: 130px;
+        }
+
+        &__button {
+            border: 1px solid #d0d0d0;
+        }
+    }
+
+    &__content {
+        padding: 1rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        flex-grow: 1;
+        transition: all 0.2s ease-out;
+        &__header {
+            text-align: center;
+            h1 {
+                font-size: 1.5rem;
+                font-weight: lighter;
+            }
+        }
+
+        &__options {
+            display: flex;
+            gap: 1rem;
+
+            &--register {
+                .filing-public-login__wrapper__content__options__card {
+                    width: 6.5rem;
+                    height: 4.5rem;
+                    .filing-public-login__wrapper__content {
+                        background-color: red;
+                    }
+                }
+            }
+            &__card {
+            }
+        }
+
+        &__form {
+            background-color: white;
+            width: 100%;
+            max-width: 40rem;
+            padding: 3rem 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #f0f0f0;
+            border-top: 2px solid #006cd8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: .8rem;
+            transition: height 0.2s ease;
+            height: 150px;
+
+            input[type=text],input[type=number],input[type=password] {
+                width: 100%;
+                max-width: 20rem;
+                padding: 0.5rem;
+                border: 1px solid #d0d0d0;
+            }
+            &--register {
+                height: 370px;
+                overflow: hidden;
+            }
+            span{
+                display:flex;
+                gap: 1rem;
+                flex-direction: row;
+                label{
+                    display:flex;
+                    flex-direction:row;
+                    gap: .5rem;
+                }
+            }
+        }
+
+        &__forgot {
+            font-style: italic;
+            color: #006cd8;
+            text-decoration: underline;
+            cursor: pointer;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        &--register {
+            gap: 1rem;
+
+            .filing-public-login__wrapper__content__form {
+                padding: 1rem;
+            }
+        }
+    }
+}

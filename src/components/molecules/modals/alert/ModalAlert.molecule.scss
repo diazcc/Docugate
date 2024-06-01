@@ -1,0 +1,54 @@
+
+
+
+
+
+.alert-modal-background{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.236);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    &__container{
+        background-color: rgb(255, 254, 254);
+        padding: 3rem;
+        border-radius: 0.3rem;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        width: auto;
+        max-width: min-content;
+    }
+}
+.showContainer{
+    animation: bigAnimate .3s  forwards;
+}
+
+.hiddeContainer{
+    animation: smallAnimate .3s  forwards;
+
+}
+
+.show{
+    transition: all ease-out .2s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidde{
+    transition: all ease-in .2s;
+    opacity: 0;
+    visibility: hidden;
+}
+

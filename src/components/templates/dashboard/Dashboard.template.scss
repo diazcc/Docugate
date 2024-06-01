@@ -1,0 +1,69 @@
+.dashboard {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(12, minmax(0, 8.3333333333%));
+  background-color: #f0f0f0;
+  color: #444;
+  gap: 0.1rem 20px;
+  animation: appear 0.4s;
+  margin: -24px;
+  padding: 24px;
+  &__box {
+    background-color: #c21313;
+    align-content: center;
+
+    &__correspondence {
+      align-content: center;
+      grid-row: 1;
+      grid-column: 1/10;
+    }
+
+    &__job {
+      align-content: center;
+      grid-row: 1;
+      grid-column: 10/13;
+    }
+
+    &__calendar {
+      align-content: center;
+      grid-row: 2;
+      grid-column: 1/4;
+      margin-right: 1rem;
+    }
+
+    &__chart {
+      align-content: center;
+      grid-row: 2;
+      grid-column: 4/13;
+    }
+  }
+}
+
+.mi-router-link {
+  position: relative;
+  color: #006cd9;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.mi-router-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background-color: #006cd9;
+  transition: none;
+}
+
+.mi-router-link:hover {
+  color: #006cd9;
+}
+
+.mi-router-link:visited::after {
+  background-color: transparent;
+}

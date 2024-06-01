@@ -1,0 +1,50 @@
+.header {
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    max-height: 4rem;
+    &__content {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+
+        &__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            cursor: pointer;
+        }
+
+        &__nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        &__user {
+            display: flex;
+            position: relative;
+        }
+    }
+}
+
+

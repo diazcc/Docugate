@@ -1,0 +1,50 @@
+
+
+.confirmation-modal-background{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.236);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    z-index: 10;
+    opacity: 0;
+    animation: height ease-out .5s;
+    &__container{
+        background-color: rgb(255, 254, 254);
+        padding: 3rem;
+        border-radius: .3rem;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+.showContainer{
+    animation: bigAnimate .3s  forwards;
+}
+
+.hiddeContainer{
+    animation: smallAnimate .3s  forwards;
+
+}
+
+.show{
+    transition: all ease-out .2s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidde{
+    transition: all ease-in .2s;
+    opacity: 0;
+    visibility: hidden;
+}
+
